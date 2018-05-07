@@ -31,6 +31,10 @@ public class JumpingCharacter extends Character {
                 this.setY(100);
                 for (int i = 270; i < 380; i += 25) {
                     super.setImage(sprite.get(num));
+                    if(i >=370){
+                         super.setImage(sprite.get(2));
+                    }
+                    else 
                     if (num == 2) {
                         num = 0;
                     } else {
